@@ -13,8 +13,6 @@ def podaj_wiek():
         wiek=input("Podaj wiek: ")
         if wiek.isdigit():
             return wiek
-podaj_wiek()
-
 def podajPlec():
     plec=""
     while plec != "M" and plec != "F":
@@ -22,4 +20,11 @@ def podajPlec():
         plec = x.upper()
     return plec
 
-podajPlec()
+def sprawdzRegion(region,wiek,plec):
+    try:
+        if(region == 'USA' and int(wiek)>=40 and plec == 'M'):
+            print("Darmowe marlboraski!")
+        else:
+            pass
+    except:
+        print("Wystapił błąd podczas sprawdzania regionu")
