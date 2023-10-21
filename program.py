@@ -1,13 +1,3 @@
-def main():
-    x = input("Podaj wiek: ")
-    try:
-        if(int(x)>=18 and int(x)<=120):
-            print("Użytkownik jest pełnoletni.")
-        else:
-            exit("Użytkownik jest niepełnoletni i/lub zbyt stary")
-    except ValueError:
-        print("Błedna wartość.")
-
 def podaj_wiek():
     while True:
         wiek=input("Podaj wiek: ")
@@ -29,7 +19,7 @@ def okresl_region ():
     return regio
 
 def sprawdz_czy_30(plec, wiek):
- try:
+    try:
         if plec == 'F' and int(wiek)>=30:
             print("Pierwszy aperol za darmo!")
         else:
@@ -45,3 +35,15 @@ def promocja_malboro(region,wiek,plec):
             pass
     except:
         print("Wystapił błąd podczas sprawdzania regionu")
+
+def main():
+    koniec = ""
+    while koniec!='Q':
+        wiek = podaj_wiek()
+        region = okresl_region()
+        plec = podajPlec()
+        sprawdz_czy_30(plec,wiek)
+        promocja_malboro(region,wiek,plec)
+        koniec = input("Czy chcesz podać kolejną osobę? Q - zakończ program")
+
+main()
