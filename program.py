@@ -20,6 +20,17 @@ def podajPlec():
         plec = x.upper()
     return plec
 
+  
+def sprawdz_czy_30(plec, wiek):
+    try:
+        if plec == 'F' and int(wiek)>=30:
+            print("Pierwszy aperol za darmo!")
+        else:
+            pass
+    except:
+        print("wystąpił błąd")
+
+
 def sprawdzRegion(region,wiek,plec):
     try:
         if(region == 'USA' and int(wiek)>=40 and plec == 'M'):
