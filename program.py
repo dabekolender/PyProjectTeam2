@@ -1,4 +1,4 @@
-# program.py adult checking
+# program.py adult checking !
 wiek = input('Podaj wiek użytkownika jako liczbę: ')
 wiek = int(wiek)
 
