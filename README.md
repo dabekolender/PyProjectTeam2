@@ -1,0 +1,1 @@
+# dokumentacja pliku program.py
