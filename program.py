@@ -9,13 +9,12 @@ def main():
         print("Błedna wartość.")
 
 
-def sprawdzRegion(region,wiek):
+def sprawdzRegion(region,wiek,plec):
     try:
-        if(region == 'USA' and int(wiek)>=40):
+        if(region == 'USA' and int(wiek)>=40 and plec == 'M'):
             print("Darmowe marlboraski!")
         else:
             pass
     except:
         print("Wystapił błąd podczas sprawdzania regionu")
-
-main()
+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
