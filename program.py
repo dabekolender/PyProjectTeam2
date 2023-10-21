@@ -8,6 +8,12 @@ def main():
     except ValueError:
         print("Błedna wartość.")
 
+def podaj_wiek():
+    while True:
+        wiek=input("Podaj wiek: ")
+        if wiek.isdigit():
+            return wiek
+podaj_wiek()
 
 def podajPlec():
     plec=""
