@@ -1,6 +1,6 @@
 # Sprawdzamy wwiek version 0.9
 
-
+#Fixed
 #wersja programu 1.0
 Krzysztof - LIDER
 Grzegorz - wybór plci
