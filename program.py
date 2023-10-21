@@ -8,7 +8,19 @@ def main():
     except ValueError:
         print("Błedna wartość.")
 
+def podaj_wiek():
+    while True:
+        wiek=input("Podaj wiek: ")
+        if wiek.isdigit():
+            return wiek
+def podajPlec():
+    plec=""
+    while plec != "M" and plec != "F":
+        x = input("Podaj płeć: M - mężczyzna, F - kobieta: ")
+        plec = x.upper()
+    return plec
 
+  
 def sprawdz_czy_30(plec, wiek):
     try:
         if plec == 'F' and int(wiek)>=30:
@@ -18,4 +30,12 @@ def sprawdz_czy_30(plec, wiek):
     except:
         print("wystąpił błąd")
 
-main()
+
+def sprawdzRegion(region,wiek,plec):
+    try:
+        if(region == 'USA' and int(wiek)>=40 and plec == 'M'):
+            print("Darmowe marlboraski!")
+        else:
+            pass
+    except:
+        print("Wystapił błąd podczas sprawdzania regionu")
