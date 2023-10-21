@@ -9,4 +9,10 @@ def main():
         print("Błedna wartość.")
 
 
-main()
+
+def okresl_region ():
+    regio = ""
+    while len(regio)!= 3:
+        x = input("Podaj region, np. EUR -= Europa, USA - Stany")
+        regio = x.upper()
+    return regio
