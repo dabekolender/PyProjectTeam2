@@ -8,6 +8,17 @@ def main():
     except ValueError:
         print("Błedna wartość.")
 
+def podaj_wiek():
+    while True:
+        wiek=input("Podaj wiek: ")
+        if wiek.isdigit():
+            return wiek
+def podajPlec():
+    plec=""
+    while plec != "M" and plec != "F":
+        x = input("Podaj płeć: M - mężczyzna, F - kobieta: ")
+        plec = x.upper()
+    return plec
 
 def sprawdzRegion(region,wiek,plec):
     try:
@@ -17,4 +28,3 @@ def sprawdzRegion(region,wiek,plec):
             pass
     except:
         print("Wystapił błąd podczas sprawdzania regionu")
-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
