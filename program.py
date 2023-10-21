@@ -9,4 +9,11 @@ def main():
         print("Błedna wartość.")
 
 
-main()
+def podajPlec():
+    plec=""
+    while plec != "M" and plec != "F":
+        x = input("Podaj płeć: M - mężczyzna, F - kobieta: ")
+        plec = x.upper()
+    return plec
+
+podajPlec()
