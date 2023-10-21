@@ -13,6 +13,7 @@ def podaj_wiek():
         wiek=input("Podaj wiek: ")
         if wiek.isdigit():
             return wiek
+          
 def podajPlec():
     plec=""
     while plec != "M" and plec != "F":
@@ -20,7 +21,23 @@ def podajPlec():
         plec = x.upper()
     return plec
 
-def sprawdzRegion(region,wiek,plec):
+def okresl_region ():
+    regio = ""
+    while len(regio)!= 3:
+        x = input("Podaj region, np. EUR -= Europa, USA - Stany")
+        regio = x.upper()
+    return regio
+
+def sprawdz_czy_30(plec, wiek):
+ try:
+        if plec == 'F' and int(wiek)>=30:
+            print("Pierwszy aperol za darmo!")
+        else:
+            pass
+    except:
+        print("wystąpił błąd")
+
+def promocja_malboro(region,wiek,plec):
     try:
         if(region == 'USA' and int(wiek)>=40 and plec == 'M'):
             print("Darmowe marlboraski!")
